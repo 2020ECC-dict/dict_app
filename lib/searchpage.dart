@@ -78,7 +78,7 @@ class _SearchPageState extends State<SearchPage> {
                     },
                     controller: _controller,
                     decoration: InputDecoration(
-                      hintText: "Search a word",
+                      hintText: "Search...",
                       contentPadding: const EdgeInsets.only(left: 24.0),
                       border: InputBorder.none,
                     ),
@@ -105,7 +105,7 @@ class _SearchPageState extends State<SearchPage> {
           builder: (BuildContext ctx, AsyncSnapshot snapshot) {
             if(snapshot.data ==null) {
               return Center(
-                child: Text("Search..."),
+                child: Text("Enter a word"),
               );
             }
 
